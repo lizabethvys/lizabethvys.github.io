@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework</title>
+    <title> Homework </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<style>.introduction{
-  margin-top: 5%;
-  margin-bottom: 5%;
+<style>
+.header{
+    height: 45vh;
+  background-image: url(https://ltdfoto.ru/images/2020/07/17/chapter20c958d085ef12350.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.header-title {
+  font-size: 100px;
+  color: white;
+  margin: auto;
+  display: inline;
+  font-family: Lucida Console, Monaco, monospace;
+}
+.header-text{
+  font-size: 25px;
+  color: white;
+  font-family: Lucida Console, Monaco, monospace;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  display: flex;
 }
 .container{
   margin-top: 5%;
@@ -22,117 +41,99 @@
 </style>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark position-static">
-        <a class="navbar-brand text-white">Резюме</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#start">Главная <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#labor">Примеры работ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#links">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      
-      <div class="card" style="background-color: #e9ecef;">
-        <div class="row">
-          <div class="col-sm-6 col-md-8 col-lg-7">
-            <div class="card-body w-75 introduction">
-              <h1 class="card-title ">Введение</h1>
-              <p class="card-text">Здравствуйте. Меня зовут Высоцкая Елизавета и я создала этот сайт специально для Вашего ознакомления. Ниже вы можете увидеть примеры моих работ, ознакомиться с более подробной информацией обо мне и найти контактные данные. Данный сайт разработан на платформе <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>. </p>
-            </div>
-          </div>
-         <div class="p-2  bd-highlight col-sm-6 col-md-4 col-lg-5">
-           <img src="https://ltdfoto.ru/images/2020/07/13/IMG_0985.png" weight="350" height="350">
-          </div>
-        </div>
+<header class="header">
+ <div class="overlay">
+    <div class="header-title"><h1>Елизавета Высоцкая</h2>
+    <p class="header-text">Верстка Сайтов</p></div>
+ </div> 
+</header>
+<div class="row">
+  <div class="container col-6 col-md-4 col-lg-4"> 
+    <div class="card border-secondary mb-3">
+      <h5 class="card-header">Обо мне</h5>
+      <div class="card-body">
+        <p class="card-text">
+         Версткой сайтов занялась пару месяцев назад. За это время успешно изучила HTML и CSS, начала потихоньку осваивать JavaScript. Я легкообучаема, неконфликтна и хочу работать в команде. Считаю, что лучше всего мне дается обучение в процессе работы, стремлюсь к успешным решениям поставленных задач, готова стажироваться.
+         </p>
       </div>
-      <div class="container" id="start">
-        <div class="row">
-          <div class="col-sm-6 col-md-7 col-lg-5">
-            <div class="card">
-              <h5 class="card-header">О себе</h5>
-               <div class="card-body">
-                <p class="card-text">
-                   Тут инфа о себе, почему хочу занматься программированием
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-5 col-lg-4" >
-            <div class="card">
-              <h5 class="card-header">Профиль</h5>
-              <div class="card-body">
-                <p class="card-text"> 
-                <p><b>Образование:</b> 
-                  <ul>
-                    <li>РГПУ им. А.И.Герцена (Педагогическое образование, "Начальное образование", заочное отделение, 2017 - до настоящего момента)</li>
-                    <li>Московский Государственный Театральный Колледж им. Леонида Филатова (Режиссер-постановщик театрализованных представлений и массовых мероприятий, 2012 - 2016 гг)</li>
-                  </ul>
-                </p>
-                <p><b>Опыт работы:</b><ul>
-                  <li>Воспитатель (2019-2020)</li>
-                  <li>Администратор в баре (2016-2019)</li>
-                  </ul></p>
-                <p><b>Доп.курсы:</b>
-                <ul>
-                  <li><a href="https://stepik.org/certificate/ddcdad91660ba78be6fddf552b22303df0c470cb.png" class="badge badge-dark" target="_blank">Stepic </a> "Веб-разработка для начинающих: HTML и CSS"</li>
-                  <li>Яндекс.Практикум "HTML, CSS, JavaScript: бесплатный вводный курс"</li>
-                </ul></p></p>
-                </div>
-              </div>
-          </div>
-        </div>
-          <div class="row">
-            <table class="table table-bordered col-sm-6 col-md-12 col-lg-12" id="labor">
-              <thead>
-                <tr>
-                  <th scope="col">Название</th>
-                  <th scope="col">Ссылка</th>
-                  <th scope="col">Дата создания</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Код данного проекта</td>
-                  <td><a href="https://github.com/lizabethvys/lizabethvys.github.io" target="_blank">Тык</a></td>
-                  <td>12.07.2020</td>
-                </tr>
-                <tr>
-                  <td>Работа с Flexboxgrid, блочная система</td>
-                  <td><a href="https://gifted-golick-d326c3.netlify.app" target="_blank">Тык</a></td>
-                  <td>07.07.2020</td>
-                </tr>
-                <tr>
-                  <td>Домашнее задание Stepic</td>
-                  <td><a href="https://pensive-beaver-76c635.netlify.app" target="_blank">Тык</a></td>
-                  <td>16.06.2020</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-      </div>   
+    </div>
+  </div>
+<div class=" container col-6 col-md-4">
+  <div class="card border-secondary mb-3">
+    <h5 class="card-header">Профиль</h5>
+    <div class="card-body">
+      <p class="card-text"> 
+      <p><b>Образование:</b> 
+        <ul>
+          <li>РГПУ им. А.И.Герцена (Педагогическое образование, "Начальное образование", заочное отделение, 2017 - до настоящего момента)</li>
+          <li>Московский Государственный Театральный Колледж им. Леонида Филатова (Режиссер-постановщик театрализованных представлений и массовых мероприятий, 2012 - 2016 гг)</li>
+        </ul>
+      </p>
+      <p><b>Доп.курсы:</b>
+      <ul>
+        <li><a href="https://stepik.org/certificate/ddcdad91660ba78be6fddf552b22303df0c470cb.png" class="badge badge-dark" target="_blank">Stepic </a> "Веб-разработка для начинающих: HTML и CSS"</li>
+        <li>Яндекс.Практикум "HTML, CSS, JavaScript: бесплатный вводный курс"</li>
+      </ul></p></p>
+    </div>
+ </div>
+</div>
+  <div class="container col-6 col-md-4">
+    <div class="card border-secondary mb-3" style="width: 18rem;">
+      <img class="card-img-top" src="https://ltdfoto.ru/images/2020/07/17/photo.png" alt="Photo">
+      <div class="card-body">
+        <h5 class="card-title">Профиль</h5>
+        <p class="card-text">Высоцкая Елизавета Андреевна</p>
+        <p>23 года</p>
+        <p>Санкт-Петербург, м Лесная</p>
+      </div>
+    </div>
+</div>
+</div>
+<div class="row table-hover mx-auto">
+  <div class="col">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Название</th>
+          <th scope="col">Ссылка</th>
+          <th scope="col">Дата создания</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Код данного проекта</td>
+          <td><a href="https://github.com/lizabethvys/lizabethvys.github.io" target="_blank" class="badge badge-dark">Тык</a></td>
+          <td>12.07.2020</td>
+        </tr>
+        <tr>
+          <td>Работа с Flexboxgrid, блочная система</td>
+          <td><a href="https://gifted-golick-d326c3.netlify.app" target="_blank" class="badge badge-dark">Тык</a></td>
+          <td>07.07.2020</td>
+        </tr>
+        <tr>
+          <td>Домашнее задание Stepic</td>
+          <td><a href="https://pensive-beaver-76c635.netlify.app" target="_blank" class="badge badge-dark">Тык</a></td>
+          <td>16.06.2020</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
       <div class="row">
-        <div class="card col-sm-6 col-md-5 col-lg-5 mx-auto" id="links">
+        <div class="card col-6 col-md-6 col-lg-6 mx-auto" id="links">
           <div class="card-body">
             <h5 class="card-title">Контакты</h5>
             <p class="card-text">Если Вас заинтересовало мое резюме или Вы хотите со мной связаться, чтобы выслать тестовое задание, то прошу пройти по удобной для Вас ссылке. </p>
-            <a href="mailto:lvysotskaya2011@yandex.ru?subject=Отклик на резюме" target="_blank" class="card-link">Написать на почту</a>
-            <a href="https://t.me/lizabethV " target="_blank" class="card-link">Telegram</a>
-            <a href="https://vk.com/lizabeth_vys" target="_blank" class="card-link">Vkontakte</a>
-            <a href="https://www.instagram.com/lizabeth_vys" target="_blank" class="card-link">Instagram</a>
+            <a href="mailto:lvysotskaya2011@yandex.ru?subject=Отклик на резюме" target="_blank" class="badge badge-dark">Написать на почту</a>
+            <a href="https://t.me/lizabethV " target="_blank" class="badge badge-dark">Telegram</a>
+            <a href="https://vk.com/lizabeth_vys" target="_blank" class="badge badge-dark">Vkontakte</a>
+            <a href="https://www.instagram.com/lizabeth_vys" target="_blank" class="badge badge-dark">Instagram</a>
           </div>
         </div>
       </div>
-</header>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
 </body>
 </html>
